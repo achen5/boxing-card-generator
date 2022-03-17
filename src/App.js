@@ -41,7 +41,7 @@ class App extends React.Component {
       weakness2: "Juan Manuel Marquez",
 
       trivia:'The Pride of the Philippines. When Pacquiao fights, the Philippines comes to a standstill.',
-      rarity:'Rare',
+      rarity:'Star/Elite World Champion, GOAT',
 
       buttonCaption:''
 

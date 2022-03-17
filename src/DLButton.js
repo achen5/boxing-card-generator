@@ -12,8 +12,10 @@ class DLButton extends React.Component {
         const name = this.props.data.name;
         const nameNoSpace = name.replace(/\s/g, '');
         const fileName = `${nameNoSpace}BoxingCard`
-        html2canvas(selector).then(function(canvas,backgroundColor) {
-          backgroundColor = "#ff0000";
+        html2canvas(selector,{
+            allowTaint: true,
+            useCORS: true
+        }).then(function(canvas) {
           saveAs(canvas.toDataURL(), fileName);
       });
         function saveAs(uri, filename) {
