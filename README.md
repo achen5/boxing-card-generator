@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Boxing Trading Card Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live demo: [https://achen5.github.io/boxing-card-generator/](https://achen5.github.io/boxing-card-generator/)
 
-## Available Scripts
+Create trading cards of your favorite boxers! Trading card assets and design are based off Pokemon Trading Cards. 
 
-In the project directory, you can run:
+## Challenges
 
-### `npm start`
+**Should I convert my app's state into nested objects?**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I decided not to. Reading the app's state may be easier if it was organized into objects. However, updating a property would require rerendering the property's object, instead of just the property. This could cause performance issues if the app were to expand in scope.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**How to I ensure that the user inputs the correct data type i.e. the user inputs a number in a number input and not a string?**
 
-### `npm test`
+`<input>` elements in HTML5 allow developers to set a type. `<input type="number">` prevents the user from inputting the string.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Future Developments
+- Add a button that converts the user's generated card into an image file. That way, the user can download and share their card.
+- Add a button that auto generates cards for popular boxers. The data will likely be obtained from [https://boxrec.com/](https://boxrec.com/).
+- Make the app responsive. Its currently optimized for laptop screens or wider.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#
+Trading card icons, style © Wizards of the Coast, Nintendo, Creatures, GAMEFREAK
