@@ -15,10 +15,10 @@ I decided not to. Reading the app's state may be easier if it was organized into
 `<input>` elements in HTML5 allow developers to set a type. `<input type="number">` prevents the user from inputting the string.
 
 
-## Future Developments
-- Add a button that converts the user's generated card into an image file. That way, the user can download and share their card.
-- Add a button that auto generates cards for popular boxers. The data will likely be obtained from [https://boxrec.com/](https://boxrec.com/).
-- Make the app responsive. Its currently optimized for laptop screens or wider.
+## In development
+- A button that auto generates cards for popular boxers. The data will likely be obtained from [https://boxrec.com/](https://boxrec.com/).
+- A bulleted list which gives users tips on building a great card. That list would be below the menu.
+- CSS Animations for a smoother user experience.
 
 
 
