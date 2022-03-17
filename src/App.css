@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  margin: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: 400 15px/1.5em "Noto Sans", sans-serif;
+  min-width: 1200px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  margin: 20px 0 50px;
+  text-align: center;
+}
+
+h3 {
+  font: 700 19px/22.5px "Noto Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+small {
+  font: 400 10px/13px "Noto Sans", sans-serif;
+  display: block;
+  margin: 5px 0;
+  word-break: break-word;
+}
+
+.line-break {
+  width: 100%;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-top {
+  align-items: center;
+}
+
+.remove-margin-top {
+  margin-top: 0;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+
+/* Card */
+
+.card {
+  background: #f8ea32 url('card_bg_w_border.png') top/contain;
+  border-radius: 15px;
+  padding: 17px;
+  position: relative;
+  height: 500px;
+  width: 357px;
+}
+
+.evolution-info {
+  display: none;
+  position: absolute;
+  top: 18px;
+  left: 10px;
+
+}
+
+
+.name-hp {
+  display: flex;
+  justify-content: space-between;
+  margin: 21px 21px 0 0;
+  padding-left: 26px;
+  position:relative;
+}
+
+.nickname {
+  font: 700 italic 9px/9px "Noto Sans", sans-serif;
+  position: absolute;
+  top: -9px;
+}
+
+.name {
+}
+
+
+.hp {
+  display: flex;
+}
+
+.hp h3 {
+  color: #ff1f00;
+  font-weight: 400;
+}
+
+.card-type {
+  position: relative;
+  bottom: 4px;
+  margin-left: 4px;
+  height: 24px;
+  width: 24px;
+}
+
+.boxer-photo {
+  background: #e0e0e0 url('pacquiao.jpg') no-repeat center/cover;
+  border: 7px solid #f8ea32;
+  margin: 0 auto;
+  height: 191px;
+  width: 272px; 
+}
+
+.measurements {
+  background: #f8ea32;
+  font: 700 9px/9px "Noto Sans", sans-serif;
+  margin: 5px auto 0;
+  text-align: center;
+  padding: 3px 0;
+  width: 254px;
+}
+
+.attacks {
+  margin: 0 auto;
+  width: 308px;
+}
+
+.attacks > div {
+  font: 400 9px/13px "Noto Sans", sans-serif;
+}
+
+.attack-name {
+  font: 700 13px/20px "Noto Sans", sans-serif;
+}
+
+.attack {
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  min-height: 63px;
+  padding: 5px 0;
+}
+
+.attack-name-desc {
+  width: 210px;
+}
+
+.attack-cost {
+  display: block;
+  margin-right: 5px;
+  text-align: center;
+  width: 46px;
+}
+
+.attack-energy {
+  margin: 1px;
+  height: 20px;
+  width: 20px;
+}
+
+.dmg {
+  font: 400 23px/23px "Noto Sans", sans-serif;
+  margin-left: 5px;
+}
+
+.weakness-resistance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: 400 9px/12px "Noto Sans", sans-serif;
+  margin: 0 auto;
+  padding: 2px 0;
+  width: 290px;
+}
+
+.trivia {
+  border: 2px solid #a48e29;
+  font: italic 700 9px/12px "Noto Sans", sans-serif;
+  margin: 0 auto;
+  padding: 2px 5px;
+  width: 290px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: 400 7px/7px "Noto Sans", sans-serif;
+  margin: 0 auto;
+  padding: 2px 0;
+  width: 308px;
+}
+
+.rarity {
+  image-rendering: -webkit-optimize-contrast;
+  height: 7px;
+  width: 7px;
+}
+
+/* Tabs */
+
+/* The tabs' CSS was derived from https://github.com/Ziratsu/YT-REACT-TABS */
+
+.container {
+  display: flex;
+  position: relative;
+  width: 800px;
+  background: #f1f1f1;
+  word-break: break-all;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.bloc-tabs {
+  width: 166px;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  position: relative;
+  outline: none;
+  width: calc(100% + 1px);
+}
+
+.tabs:last-child {
+  border-bottom: none;
+}
+
+.active-tabs  {
+  background: white;
+}
+
+.active-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 5px;
+  background: rgb(88, 147, 241);
+}
+
+button {
+  border: none;
+  
+}
+.content-tabs {
+  flex-grow : 1;
+  border-left: 1px solid rgba(0, 0, 0, 0.274);
+}
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.content h2 {
+  padding: 0px 0 10px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 7px;
+}
+
+.active-content {
+  display: block;
+}
+
+/* Form Control within Tabs */
+
+.form-control input[type="text"], .form-control input[type="number"] {
+  padding: 8px 5px;
+  text-align: center;
+  width: 250px;
+}
+
+select {
+  padding: 8px 5px;
+  width: 250px;
+}
+
+textarea {
+  width: 250px;
+  word-break: break-word;
+}
+
+.form-control {
+  display: flex;
+  margin: 5px 0;
+  width: 592px;
+}
+
+.form-control-label {
+  text-align: left;
+  width: 150px;
+  display: inline-block;
+  margin-right: 10px;
+  word-break:break-word;
+}
+
+.form-control-container {
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 20px;
+  width: 430px;
+}
+
+.form-control-sm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+  font: 400 15px/15px"Noto Sans", sans-serif;
+  width: 125px;
+}
+
+.form-control-sm input[type="number"] {
+  width: 50px;
+}
+
+.form-control-sm .form-control-label {
+  margin: 0 10px;
+  width: unset;
+}
+
+.form-control-sm:first-child .form-control-label, .form-control-sm:nth-child(4n) .form-control-label {
+  margin-left: 0;
+}
+
+.form-control-sm input, .form-control-sm select {
+  width: 50px;
+}
+
+.testImg {
+  width: 300px;
+}
+
+.img-uploader {
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  display: inline-block;
+  padding: 12px 20px;
+  width: 305px;
+}
+
+.img-position-controls {
+  margin: 5px 0 0;
+}
+
+.radio-button {
+  width: 32%;
+  display: inline-block;
+}
+
+.radio-button label {
+  margin-left: 5px;
+}
+
+.record-section {
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  display: flex;
+  padding: 12px 20px;
+  width: 430px;
+}
+
+footer {
+  font-size: 12px;
+  text-align: right;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+}
+
+/* Download */
+
+.download {
+  background: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  font: 400 22px/1.5em "Noto Sans", sans-serif;
+  padding: 9px 25px;
+  display: block;
+  margin: 30px auto 15px;
+}
+
+.downloadCaption {
+  text-align: center;
+}
