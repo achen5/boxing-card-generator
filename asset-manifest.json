@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/boxing-card-generator/static/css/main.c64a42a6.chunk.css",
-    "main.js": "/boxing-card-generator/static/js/main.8e8a22c1.chunk.js",
-    "main.js.map": "/boxing-card-generator/static/js/main.8e8a22c1.chunk.js.map",
+    "main.css": "/boxing-card-generator/static/css/main.61e4edfc.chunk.css",
+    "main.js": "/boxing-card-generator/static/js/main.40b654ba.chunk.js",
+    "main.js.map": "/boxing-card-generator/static/js/main.40b654ba.chunk.js.map",
     "runtime-main.js": "/boxing-card-generator/static/js/runtime-main.98907f47.js",
     "runtime-main.js.map": "/boxing-card-generator/static/js/runtime-main.98907f47.js.map",
     "static/js/2.250e6d84.chunk.js": "/boxing-card-generator/static/js/2.250e6d84.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.1ad68fd7.chunk.js": "/boxing-card-generator/static/js/3.1ad68fd7.chunk.js",
     "static/js/3.1ad68fd7.chunk.js.map": "/boxing-card-generator/static/js/3.1ad68fd7.chunk.js.map",
     "index.html": "/boxing-card-generator/index.html",
-    "static/css/main.c64a42a6.chunk.css.map": "/boxing-card-generator/static/css/main.c64a42a6.chunk.css.map",
+    "static/css/main.61e4edfc.chunk.css.map": "/boxing-card-generator/static/css/main.61e4edfc.chunk.css.map",
     "static/js/2.250e6d84.chunk.js.LICENSE.txt": "/boxing-card-generator/static/js/2.250e6d84.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.98907f47.js",
     "static/js/2.250e6d84.chunk.js",
-    "static/css/main.c64a42a6.chunk.css",
-    "static/js/main.8e8a22c1.chunk.js"
+    "static/css/main.61e4edfc.chunk.css",
+    "static/js/main.40b654ba.chunk.js"
   ]
 }
