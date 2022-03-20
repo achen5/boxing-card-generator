@@ -300,6 +300,14 @@ button {
   width: 250px;
 }
 
+.textAndHint {
+  width: 300px;
+}
+
+.textAndHint small {
+  white-space: pre-line;
+}
+
 select {
   padding: 8px 5px;
   width: 250px;

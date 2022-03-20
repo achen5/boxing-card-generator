@@ -24,7 +24,7 @@ function Tabs(props) {
 
       <div className="content-tabs">
         <Tab name="Name & HP" currentState={toggleState} tabNum={1}>
-          <FormControl inputType="text" name="Boxer's Name" maxLength="17" updateProp={(e) => props.updateProp(e,"name")}  />
+        <FormControl inputType="textAndHint" name="Boxer's Name" maxLength="17" updateProp={(e) => props.updateProp(e,"name")} hint={`* For long names, try using abbreviations.\r\nSo "Juan Francisco Estrada" becomes "Juan F. Estrada".`}/>
           <FormControl inputType="text" name="Boxer's Nickname" maxLength="32" updateProp={(e) => props.updateProp(e,"nickname")}/>
           <FormControl inputType="dropdown" name="HP" id="hp" options={["- Select -",30,40,50,60,70,80,90,100,110,120,130]} updateProp={props.updateProp}/>
         </Tab>
@@ -56,10 +56,10 @@ function Tabs(props) {
           <FormControl inputType="dropdown" name="Damage Modifier" id="attack2-mod" options={["- Select -","None","+","-","X"]} updateProp={props.updateProp}/>
         </Tab>
         <Tab name="Match Ups" currentState={toggleState} tabNum={6}>
-          <FormControl inputType="text" name="Looks good against this boxer" maxLength="17" updateProp={(e) => props.updateProp(e,"advantage1")}  />
-          <FormControl inputType="text" name="And this boxer" maxLength="17" updateProp={(e) => props.updateProp(e,"advantage2")}  />
-          <FormControl inputType="text" name="Looks bad against this boxer" maxLength="17" updateProp={(e) => props.updateProp(e,"weakness1")}  />
-          <FormControl inputType="text" name="And this boxer" maxLength="17" updateProp={(e) => props.updateProp(e,"weakness2")}  />
+          <FormControl inputType="text" name="Looks good against this boxer" maxLength="23" updateProp={(e) => props.updateProp(e,"advantage1")}  />
+          <FormControl inputType="text" name="And this boxer" maxLength="23" updateProp={(e) => props.updateProp(e,"advantage2")}  />
+          <FormControl inputType="text" name="Looks bad against this boxer" maxLength="23" updateProp={(e) => props.updateProp(e,"weakness1")}  />
+          <FormControl inputType="text" name="And this boxer" maxLength="23" updateProp={(e) => props.updateProp(e,"weakness2")}  />
         </Tab>
         <Tab name="Footer" currentState={toggleState} tabNum={7}>
           <FormControl inputType="textArea" name="Trivia" id="trivia" maxLength="120" updateProp={(e) => props.updateProp(e,"trivia")}/>
@@ -151,6 +151,9 @@ class FormControl extends React.Component {
       case 'text':
         theInput = <input type="text" id={this.generateId()} onChange={this.props.updateProp} maxLength={this.props.maxLength}/>
         break;
+      case 'textAndHint':
+          theInput = <div class="textAndHint"><input type="text" id={this.generateId()} onChange={this.props.updateProp} maxLength={this.props.maxLength}/><small>{this.props.hint}</small></div>
+          break;
       case 'textArea':
         theInput = <textarea rows="10" cols="33" id={this.generateId()} onChange={this.props.updateProp} maxLength={this.props.maxLength}></textarea>;
         break;
