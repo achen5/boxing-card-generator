@@ -4,17 +4,6 @@ Live demo: [https://achen5.github.io/boxing-card-generator/](https://achen5.gith
 
 Create trading cards of your favorite boxers! Trading card assets and design are based off Pokemon Trading Cards. 
 
-## Challenges
-
-**Should I convert my app's state into nested objects?**
-
-I decided not to. Reading the app's state may be easier if it was organized into objects. However, updating a property would require rerendering the property's object, instead of just the property. This could cause performance issues if the app were to expand in scope.
-
-**How to I ensure that the user inputs the correct data type i.e. the user inputs a number in a number input and not a string?**
-
-`<input>` elements in HTML5 allow developers to set a type. `<input type="number">` prevents the user from inputting the string.
-
-
 ## In development
 - A button that auto generates cards for popular boxers. The data will likely be obtained from [https://boxrec.com/](https://boxrec.com/).
 - A bulleted list which gives users tips on building a great card. That list would be below the menu.
