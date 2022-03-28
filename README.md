@@ -5,6 +5,7 @@ Live demo: [https://achen5.github.io/boxing-card-generator/](https://achen5.gith
 Create trading cards of your favorite boxers! Trading card assets and design are based off Pokemon Trading Cards. 
 
 ## In development
+- Make the web app responsive. The app is not optimized for mobile yet.
 - A button that auto generates cards for popular boxers. The data will likely be obtained from [https://boxrec.com/](https://boxrec.com/).
 - A bulleted list which gives users tips on building a great card. That list would be below the menu.
 - CSS Animations for a smoother user experience.
