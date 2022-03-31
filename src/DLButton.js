@@ -41,7 +41,7 @@ class DLButton extends React.Component {
       
           }
       }
-      this.props.updatePropString(<span>Enjoy your card &#128522;</span>,"buttonCaption");
+      this.props.updatePropString("Enjoy your card 😊","buttonCaption");
     }
 
     render() {
